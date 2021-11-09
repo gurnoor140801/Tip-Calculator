@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./tip.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Mohave:wght@300;400&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="./Pelfusion-Long-Shadow-Ios7-Calculator.ico"/>
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+<title>Tip Calculator</title>
+
+</head>
+
+<body>
+    <div id="root">
+        <h1>TIP CALCULATOR</h1>
+        
+            <p>Bill Amount</p>
+            <input type="text" placeholder="Amount to be paid in ₹" id="amt__input">
+            <p>How was the service ?</p>
+            <select id="perc__input">
+                <option hidden>
+                    Select
+                </option>
+                <option value="0.25">25% - Top Notch</option>
+                <option value="0.20">20% - Excellent</option>
+                <option value="0.15">15% - Good</option>
+                <option value="0.10">10% - Bad</option>
+                <option value="0.05">5% - Worst</option>
+            </select>
+            <!-- <div class="btn-group">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Action
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#" value="0.25">Action</a>
+                  <a class="dropdown-item" href="#" value="0.20">Another action</a>
+                  <a class="dropdown-item" href="#" value="0.15">Something else here</a>
+              </div> -->
+            <p>Total number of persons</p>
+            <input type="text" id="people__input" placeholder="Number of people sharing the bill">
+            <button onclick="calc__fun()" class="btn">Calculate</button>
+        
+            <p>Tip Amount Per Person - </p>
+            <p id="dis"></p>
+        
+    </div>
+
+</body>
+<script src="./tip.js"></script>
+
+</html>
